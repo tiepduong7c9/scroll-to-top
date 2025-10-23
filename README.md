@@ -11,39 +11,14 @@ A simple Chrome extension that allows you to quickly scroll to the top or bottom
 
 ## Installation
 
-### Step 1: Generate Icons
+1. Clone or download this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top-right corner)
+4. Click **Load unpacked**
+5. Select the `scroll-to-top` folder
+6. The extension should now appear in your toolbar
 
-First, you need to generate the PNG icons from the SVG file:
-
-**Option A: Using ImageMagick (Recommended)**
-
-```bash
-# Install ImageMagick if you don't have it
-sudo apt install imagemagick
-
-# Run the icon generation script
-./generate-icons.sh
-```
-
-**Option B: Manual Generation**
-
-If you prefer, you can use any online SVG to PNG converter:
-
-1. Open `icons/icon.svg` in a browser or image editor
-2. Export it as PNG at these sizes: 16x16, 32x32, 48x48, and 128x128
-3. Save them as `icon16.png`, `icon32.png`, `icon48.png`, and `icon128.png` in the `icons` folder
-
-**Option C: Use Placeholder Icons**
-
-You can temporarily use any PNG images (rename them to match the required names) until you generate proper icons.
-
-### Step 2: Load the Extension in Chrome
-
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable **Developer mode** (toggle in the top-right corner)
-3. Click **Load unpacked**
-4. Select this folder (`scroll-to-top`)
-5. The extension should now appear in your toolbar
+All icons are already included in the `icons/` folder, so no additional setup is needed.
 
 ## Usage
 
@@ -64,13 +39,12 @@ scroll-to-top/
 ├── manifest.json          # Extension configuration
 ├── background.js          # Background service worker
 ├── content.js             # Content script for scrolling
-├── generate-icons.sh      # Script to generate PNG icons
 ├── icons/
 │   ├── icon.svg          # Source SVG icon
-│   ├── icon16.png        # 16x16 icon (generated)
-│   ├── icon32.png        # 32x32 icon (generated)
-│   ├── icon48.png        # 48x48 icon (generated)
-│   └── icon128.png       # 128x128 icon (generated)
+│   ├── icon16.png        # 16x16 icon
+│   ├── icon32.png        # 32x32 icon
+│   ├── icon48.png        # 48x48 icon
+│   └── icon128.png       # 128x128 icon
 └── README.md             # This file
 ```
 
