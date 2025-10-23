@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Scroll to Top/Bottom",
+  "version": "1.0.0",
+  "description": "Quickly scroll to the top or bottom of any webpage with a single click",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Scroll to Top/Bottom"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
